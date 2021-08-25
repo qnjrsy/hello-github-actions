@@ -1,0 +1,13 @@
+jobs:
+  build:
+    name: Hello world action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Mona"
+
+To https://github.com/your-username/your-repo.git
+ ! [remote rejected] your-branch -> your-branch (refusing to allow an integration to update main.yml)
+error: failed to push some refs to 'https://github.com/your-username/your-repo.git'
